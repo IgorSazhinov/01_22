@@ -3,72 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Еж Резюме</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="logo.jpg" width="200" alt="фото ежа"></td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="logo.jpg" alt="фото ежа" class="logo" >
+            <div class="info-text">
                 <h1>Еж Ежович</h1>
-                <p><em>Я <strong>хозяин</strong> леса!</em></p>
-                <P>Я люблю программировать</P>      
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h2>Мои домики</h2>
-    <ul>
-        <li><a href="http://pni-1.ksp.gov.spb.ru/" target="_blank">пень</a></li>
-        <li><a href="https://www.norkavsem.ru/" target="_blank">норка</a></li>
-    </ul>
-    <hr>
-    <h2>Мои любимые фрукты</h2>
-    <ol>
-        <li>яблочки</li>
-        <li>груши</li>
-        <li>сливы</li>
-    </ol>
-    <hr>
-    <h2>Чем занимался</h2>
-    <table>
-        <tr>
-            <th>Род деятельности</th>
-            <th>Как</th>
-            <th>Когда</th>
-        </tr>
-        <tr>
-            <td>Спал</td>
-            <td>Крепко</td>
-            <td>Ранним утром</td>
-        </tr>
-        <tr>
-            <td>Позавтракал</td>
-            <td>Сытно</td>
-            <td>Утром</td>
-        </tr>
-        <tr>
-            <td>Сел программировать</td>
-            <td>Осмыленно</td>
-            <td>Днем</td>
-        </tr>
-    </table>
-    <hr>  
-    <h2>Любимые каналы на ютубе</h2>
-    <a href="youtube.html" target="_blank">Владилен Минин</a>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <label for="name">Выше имя</label>
-        <input type="text" id="name" placeholder="Введите ваше имя">
-        <br>
-        <label for="email">Выш email</label>
-        <input type="email" id="email" placeholder="Введите ваш email">
-        <br>
-        <label for="text">Выше сообщение</label>
-        <br>
-        <textarea name="" id="text" cols="15" rows="5"></textarea>
-        <br>
-        <input type="submit" value="Связаться!">
-    </form>
+                <p>Я хозяин леса!</p>
+                <P>Я люблю программировать</P>
+                <h4>Мои домики</h4>
+                    <a href="http://pni-1.ksp.gov.spb.ru/" target="_blank">пень</a>
+                    <a href="https://www.norkavsem.ru/" target="_blank">норка</a>
+            </div>        
+        </div>
+            
+        <div class="card bg-yellow">
+            <h2>Мои любимые фрукты</h2>
+            <ol class="fruts">
+                <li>яблочки</li>
+                <li>груши</li>
+                <li>сливы</li>
+            </ol>
+        </div>  
+        
+        <div class="card bg-green">
+            <h2>Чем занимался</h2>
+            <table class="table">
+                <tr>
+                    <td>Спал</td>
+                    <td>Крепко</td>
+                    <td>Ранним утром</td>
+                </tr>
+                <tr>
+                    <td>Позавтракал</td>
+                    <td>Сытно</td>
+                    <td>Утром</td>
+                </tr>
+                <tr>
+                    <td>Сел программировать</td>
+                    <td>Осмыленно</td>
+                    <td>Днем</td>
+                </tr>
+            </table>
+        </div>  
+        <div class="card bg-red">
+            <h2>Любимые каналы на ютубе</h2>
+            <ul class="link-1">
+                <li><a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank">HTML для начинающих ежат</a></li>
+                <li><a href="https://www.youtube.com/watch?v=SpCUuyZZTp8"> CSS для начинающих</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Выше имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div> 
+                    <div class="form-group"> 
+                        <label for="email">Выш email</label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
+                </div> 
+                    <div class="form-group">   
+                        <label for="text">Выше сообщение</label>
+                        <textarea name="" id="text" cols="15" rows="5"></textarea>
+                    </div>
+                <input class="btm" type="submit" value="Связаться!">
+                </form>
+        </div>
+    </div>
 </body>
 </html>
